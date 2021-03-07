@@ -1,0 +1,416 @@
+@font-face{
+    font-family:Roboto;
+    src: url(../fonts/Roboto-Regular.ttf)
+}
+@font-face{
+    font-family:Montserrat;
+    src: url(../fonts/Montserrat-Bold.ttf)
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', Sans-Serif;
+}
+
+/*----------------------------Estilos base-------*/
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat';
+    margin: 0
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.container--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.column{
+    width: 100%;
+}
+/*----------------------------Estilos Header-------*/
+.main-header{
+    width: 100%;
+}
+.logo{
+    font-size: 1.8em;
+    color: #DE423A;
+    padding: 10px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100
+}
+.main-header__contactInfo{
+    width: 100%
+}
+.main-header__contactInfo__phone{
+    background: #DE423A;
+    color: white;
+    margin:0 auto;
+    padding: 10px;
+    width: 100%;
+}
+.main-header__contactInfo__addres{
+    padding: 10px;
+    margin:0;
+}
+.main-header [class *="fa-"]:before {
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+.social-icon [class *="fa-"]:hover{
+    background-color: antiquewhite;
+    color:black;
+}
+.social-icon__link{
+    text-decoration: none;
+}
+/*----------------------------Estilos menú-------*/
+
+.main-nav{
+    width: 100%;
+    position: relative;
+    z-index: 100000;
+    padding: 10px;
+}
+.fa-bars{
+    display: block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.fa-bars:hover{
+    background-color:antiquewhite ;
+    color: black;
+}
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.social-icon [class*="fa-"]{
+    color: black;
+    background: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+ 
+.menu{
+    position: absolute;
+    top:60px;
+    left: 0;
+    z-index:100000;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    background:rgba(0,0,0,.9);
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.mostrar{
+    height: 200px;
+}
+
+.menu__link{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;      
+}
+.menu__link--select{
+    background: #DE423A;
+}
+/*----------------------------Estilos banner-------*/
+.banner{
+    margin-top: -59px;
+    position: relative;
+}
+.banner:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    z-index: 1000;
+    top: 0;
+}
+.banner__img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.banner__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 10000;
+    width: 90%;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+/* Estilos principales */
+.group--color .container{
+    background-color:#DE423A;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.main__title{
+    margin:10px 0;
+    text-transform: uppercase;
+}
+.main__txt{
+    color: rgb(243, 240, 240);
+}
+.main-about-description__img{
+    height: 200px;
+    object-fit: cover;
+}
+.column__title{
+    font-size: 1.3em;
+    text-align: center;
+}
+.column__txt{
+    padding: 10px;
+}
+.container .column:nth-child(2){
+    padding: 10px 0;
+}
+.btn{
+    display: block;
+    border: 2px solid #DE423A;
+    text-decoration: none;
+    color: black;
+    padding:5px 15px;
+    text-align: center;
+    width: 120px;
+    margin: 10px auto;
+    transition:background-color 0.5s;
+    -webkit-transition:background-color 0.5s;
+    -moz-transition:background-color 0.5s;
+    -ms-transition:background-color 0.5s;
+    -o-transition:background-color 0.5s;
+}
+.btn:hover{
+    background-color: #DE423A;
+    color: white;
+}
+.today-special__img{
+    height: 200px;
+    padding: 10px;
+    object-fit: cover;
+    margin: auto;
+}
+.today-special__title{
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+.today-special .column{
+    text-align: center;
+}
+.total-special__title{
+    font-size: 1.3em;
+    color: rgb(58, 58, 58);
+}
+.total-specia__price{
+    color: #DE423A;
+    font-weight: bold;
+}
+
+/*----------  footer  ----------*/
+
+.footer{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    padding: 15px 10px;
+    margin-top: 15px;
+}
+.footer-section{
+
+    margin: 10px auto;
+}
+.footer-section__title{
+    font-size: 1em;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.footer-section__txt{
+    color: rgb(231, 230, 230);
+    font-size: 0.8em;
+}
+.footer .footer-section:nth-child(2) .footer-section__txt{
+    margin: 4px auto;
+}
+.footer-section__socials-link{
+    display: block;
+    color: rgb(231, 230, 230);
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 5px 0;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+.footer-section__socials-link i{
+    width: 20px;
+    text-align: center;
+}
+
+.footer-section__socials-link:hover{
+    color:#DE423A;
+}
+.footer-section:hover .footer-section__title{
+    color:#DE423A;
+}
+.copy{
+    color: white;
+    background-color: rgb(17, 17, 17);
+    text-align: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copy span{
+    color:#DE423A;
+    margin-left: 5px;
+}
+
+/*----------  responsive  ----------*/
+
+
+@media screen and (min-width:768px){
+    .main-header{
+            background-color: black;
+    }
+    .container--flex{
+        display: flex;
+        flex-wrap: nowrap;
+
+    }
+    .main-header .container--flex{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9900;
+        background-color: rgba(0, 0, 0, 0.342);
+    }
+    .main-nav{
+        position: absolute;
+        top: 89px;
+        padding: 0;
+    }
+    .main-nav .container--flex{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: rgba(0,0,0,.9);
+    }
+    .main-header__contactInfo__phone,  .main-header__contactInfo{
+        width: max-content;
+        margin: 0;
+    }
+    .main-header__contactInfo__addres{
+        color: white;
+        width: max-content;
+    }
+    .main-header__contactInfo__phone{
+        text-align: right;
+        background:none;
+        margin-left: auto;
+    }
+    .banner, .banner__img{
+        height: 400px;
+    }
+    .fa-bars{
+        display: none;
+    }
+    .menu{
+        display: block;
+        height: max-content;
+        background-color: rgb(0, 0, 0);
+        width: max-content;
+        position: static;
+    }
+    .menu__item{
+        display: inline-block;
+        width: max-content;
+        padding: auto 15px;
+    }
+    .menu__link{
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+}
+    .menu__link:hover{
+        background-color:#DE423A;
+    }
+    .social-icon{
+        justify-content: flex-end;
+        width: 100%;
+        padding: 10px;
+    }
+    .banner__content{
+        top: 70%;
+    }
+}
+@media screen and (min-width:1080px){
+    .banner{
+        height: 500px;
+    }
+    .banner__img{
+        height: 500px;
+    }
+    .main-about-description__img{
+        height:300px ;
+    }
+    .today-special__title{
+        margin-top: 30px;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-section{
+        width: 33%;
+        text-align: center;
+    }
+}
